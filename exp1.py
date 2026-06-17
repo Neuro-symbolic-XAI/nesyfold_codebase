@@ -59,7 +59,7 @@ def get_fidelity(data_loader, model, y_f):
     f = f/len(y_m)
     return f
 
-device = "cuda:0"
+device = "cuda:1"
 #The main function is called from the command line as follows:
 def main():
     parser = argparse.ArgumentParser(prog = "exp1.py", description = "Run the pipeline for experiment 1")
@@ -164,7 +164,7 @@ def main():
         # chkpoint = torch.load("/home/pxp180054/projects/XAI_images/model_checkpoints/model_checkpoints_dedrf/1/chkpoint5.pt")
 
         # model.load_state_dict(chkpoint["model_state_dict"])
-        device = "cuda:0"
+        device = "cuda:1"
         model.to(device)
         loaded_chk = False
         for run_dir in os.listdir(model_checkpoint_dir_path):

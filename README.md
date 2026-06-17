@@ -1,3 +1,7 @@
+# NeSyFOLD applied to M&M2s cardiac dataset
+cardio.py has the logic to train the model in the dataset and use the NeSyFOLD codes to extract the rules. 
+config copy.py has the credentials for the FOLD API
+
 # NeSyFOLD code-base
 All the files necessary to run the experiments shown in the [paper](https://ojs.aaai.org/index.php/AAAI/article/view/28235) are present in the repo.
 Need to obtain a username and password for using the foldsem api from the [FOLD-SE website](http://ec2-52-0-60-249.compute-1.amazonaws.com/foldse-api/): 

@@ -144,8 +144,10 @@ def create_train_val(fullset):
     return train_set, val_set
 def MNIST_dataloaders(batch_size = 32, train_shuffle = True):
     # load the data
-    train_val_set = MNIST_train_val(root = "/home/pxp180054/projects/XAI_images/")
-    test_set = MNIST_test(root = "/home/pxp180054/projects/XAI_images/")
+    #train_val_set = MNIST_train_val(root = "/home/pxp180054/projects/XAI_images/")
+    #test_set = MNIST_test(root = "/home/pxp180054/projects/XAI_images/")
+    train_val_set = MNIST_train_val(root = "/mnt/data/")
+    test_set = MNIST_test(root = "/mnt/data/")
     train_set, val_set = create_train_val(train_val_set)
     # create the dataloaders
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=train_shuffle, num_workers=0)

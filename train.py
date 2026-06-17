@@ -122,7 +122,7 @@ def evaluate(test_loader, model):
     # print(f"test_accuracy: {full_test_accuracy}")
     return full_test_accuracy
 #loading the full set from the train folder
-device = "cuda:0"
+device = "cuda:1"
 def main():
     parser = argparse.ArgumentParser(prog="train.py", description="Run the training for CNN")
     parser.add_argument("--dataset_name", type=str, help="name of the dataset")

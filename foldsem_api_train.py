@@ -52,7 +52,9 @@ def foldsem_api_train(train_data_path, rule_file_path, ratio, tail, user, passwo
 
     # response = requests.post("http://foldse-loadbalancer-339280618.us-east-1.elb.amazonaws.com/auth/foldmodel_binary/",
     #                          json=payload)  # Uncomment if you want to run binary classification model.
-    response = requests.post("http://foldse-loadbalancer-339280618.us-east-1.elb.amazonaws.com/auth/foldmodel_multicategory/", json=payload) # Uncomment if you want to run multi-category classification model.
+    #http://foldse-loadbalancer-339280618.us-east-1.elb.amazonaws.com/auth/foldmodel_multicategory/
+
+    response = requests.post("http://ec2-52-0-60-249.compute-1.amazonaws.com/auth/foldmodel_multicategory/", json=payload) # Uncomment if you want to run multi-category classification model.
 
     try:
         response_obj = response.json()

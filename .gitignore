@@ -1,0 +1,13 @@
+config.py
+model_check/
+model_check_default/
+train_logs_mnms2/
+train_logs/
+__pycache__/
+screenlog.0
+data/
+filters_out/
+model_checkpoints/
+rules/
+norm_tensors/
+*.json
